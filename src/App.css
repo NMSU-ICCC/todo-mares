@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 100vh;
+  height: 100vw;
 }
 
 .App-logo {
@@ -35,4 +37,91 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.Title{
+  background-color: transparent;
+  border: none;
+
+  font-weight: 500;
+  font-size: 2rem;
+  color:rgb(36, 36, 36);
+
+}
+.mainContainer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  /* background-color: rgb(36, 118, 118); */
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskInput{
+  /* border-radius: 28px; */
+  border: none;
+  border-bottom: solid blue 1px;
+  background-color: #27272747;
+  height: 25px;
+  margin-bottom: 20px;
+}
+  .taskInput:active{
+    border: none;
+    background-color: rgb(202, 202, 202);
+  }
+
+
+
+.taskButton{
+  height: 28px;
+  background-color: rgb(70, 82, 255);
+  border-radius: 0 5px 5px 0;
+  border: none;
+  padding: 5px;
+  /* margin: 5px; */
+  color: white;
+  font-weight: 500;
+}
+  .taskButton:hover{
+    background-color: rgb(66, 50, 187);
+    cursor: pointer;
+  }
+  .taskButton:active{
+    background-color: rgb(27, 22, 120);
+    cursor: pointer;
+  }
+
+.task{
+  width: 22px;
+
+  font-size: 12px;
+  display: flex;
+  flex-direction: "row";
+  width: 20rem;
+  background-color: rgb(228, 228, 228);
+  justify-content: space-between;
+
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+  font-weight: 500;
+  overflow: hidden;
+  box-shadow: 8px 6px 19px -5px rgba(30,28,28,0.75);
+}
+  .task:hover{
+    background-color: rgb(200, 200, 200);
+  }
+  .task:active{
+    background-color: rgb(157, 157, 157);
+  }
+
+.checked{
+  color: green;
+}
+.unchecked{
+  color: red;
 }
